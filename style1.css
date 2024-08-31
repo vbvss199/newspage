@@ -1,0 +1,315 @@
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+html,body
+{
+width:100%;
+height:100%;
+}
+h2
+{
+    font-size: 150%;;
+}
+.tophead> p
+{
+    font-size: 50%;
+}
+.top
+{
+    background-color:steelblue;
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.tophead
+{
+    border:3px solid rgb(232, 191, 79);
+    width:40%;
+    height:60px;
+    padding:4px;
+    padding-top:0px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px 2px  #d2d3ed;
+}
+.textcenter
+{
+    text-align: center;
+    padding:2px;
+}
+.smalltext
+{
+    font-size: 12px;
+}
+.boldtext
+{
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.blackbtn
+{
+    background-color: black;
+    height:30px;
+    width:100px;
+}
+
+.whitetext
+{
+    color: white;
+}
+.nav
+{
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:5px;
+    flex-wrap: wrap;
+}
+
+.navleft
+{
+    flex-basis:30%;
+    height:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding:10px;
+    flex-grow: 2;
+    flex-shrink: 2;
+    /* border: 2px solid black; */
+}
+
+#navlefttext
+{
+    flex-basis:30%;
+    height:50%;
+    margin:2px;
+}
+.navmiddle
+{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:20%;
+    height:50%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    /* border: 2px solid red; */
+    padding: 10px;;
+    align-self: center;
+    
+}
+.navright
+{
+    flex-grow: 2;
+    flex-shrink: 2;
+    width:25%;
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    /* border: 2px solid green; */
+    padding: 10px;
+}
+input[type="email"]
+{
+    width:60%;
+    margin-bottom: 6px;;
+    height: 30px;
+    font-size: 20px;
+}
+#dropdown1
+{
+    width: 70%;
+    height:35px;
+    margin-top: 6px;;
+    font-size: 20px;
+}
+.minimumpadding
+{
+    margin: 5px;
+}
+.container2
+{
+    margin-left:10%;
+    width: 80%;
+}
+.horizontal_line{
+    background-color: rgb(2, 14, 2);
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid black;
+    margin: auto;
+    margin-top:7px;
+    margin-bottom: 12px;
+    
+}
+.orangebtn
+{
+    background-color: rgb(184, 125, 15);
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    transition: width 2s;
+    border-radius: 4px;
+    font-size: 18px;
+    
+}
+.orangebtn:hover
+{
+    background-color: rgb(235, 112, 114);
+    width: 50%;
+    border-radius: 8px;
+}
+.bookholder
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:auto;
+    flex:1;
+}
+
+img
+{
+    max-width: 100%;
+    height: 100%;
+}
+.bookpic
+{
+    flex-basis:250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-right: 30px;;
+    margin-left: auto;
+    border: 2px solid green;
+}
+.bookdetails
+{
+    display: flex;
+    /* flex-basis: 300px; */
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+footer
+{
+    width: 100%;
+    height: 100px;
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 750px)
+{
+
+   body 
+   {
+    /* background-color: red; */
+   }
+   .nav{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+   }
+   .navleft
+    {
+        display: flex;
+        width: 100%;
+        border: 2px solid white;
+        justify-content: center;
+    }
+    #dropdown1
+    {
+        width: 100%;
+    }
+    .navmiddle
+    {
+        border: 2px solid white;
+        align-self: flex-start;
+        width: 100%;
+        justify-content: start;
+    }
+    .navright
+    {
+        border: 2px solid white;
+        width: 100%;
+        justify-content: center;
+    }
+    input[type="email"]
+    {
+        width:80%;
+        margin-bottom: 6px;;
+        height: 30px;
+        font-size: 20px;
+    }
+    .blackbtn
+    {
+        width: 80%;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+    
+    .bookholder
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    img
+    {
+        width: 120%;
+        height: 100%;
+    }
+    .bookpic
+    {
+        border: 5px solid rgb(252, 248, 248);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    p
+    {
+        text-align: justify;
+    }
+    .tophead
+    {
+        width: 50%;
+    }
+    .tophead>p 
+    {
+        font-size: 10px;
+    }
+    .bookdetails
+    {
+        border: 3px solid white;
+        margin-top: 5px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .orangebtn
+    {
+        align-self: center;
+    }
+    
+}
+
+
